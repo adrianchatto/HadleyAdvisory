@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Hadley Advisors</title>
+  <meta name="description" content="Get in touch with Hadley Advisors. Start a conversation about how business development could feel different for your accountancy firm.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__brand" href="index.html">Hadley<span class="nav__brand-mark">.</span> Advisors</a>
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+        <ul class="nav__menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html" class="btn btn--primary nav__cta">Start a conversation</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============== PAGE HEADER ============== -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header__inner">
+        <span class="eyebrow reveal">Contact</span>
+        <h1 class="reveal reveal--delay-1">Let's start a conversation.</h1>
+        <p class="lead reveal reveal--delay-2">A 30-minute conversation is the easiest way to understand whether we're the right partner. No pitch deck, no obligation — just a focused chat about where your firm is and where you're trying to get to.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT GRID ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h2>Get in touch.</h2>
+          <p>Tell us a little about your firm and what's prompting the conversation. We aim to reply within one business day.</p>
+          <dl>
+            <dt>Email</dt>
+            <dd><a href="mailto:hello@hadleyadvisors.com">hello@hadleyadvisors.com</a></dd>
+            <dt>LinkedIn</dt>
+            <dd><a href="#">linkedin.com/in/[founder-handle]</a></dd>
+            <dt>Based in</dt>
+            <dd>[City, Country]</dd>
+            <dt>Working with firms across</dt>
+            <dd>UK, Europe, and remote engagements</dd>
+          </dl>
+        </div>
+
+        <form class="form reveal reveal--delay-1" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="firm">Firm name</label>
+              <input id="firm" name="firm" type="text" autocomplete="organization">
+            </div>
+            <div class="form__group">
+              <label for="role">Your role</label>
+              <input id="role" name="role" type="text" autocomplete="organization-title">
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="topic">What's on your mind?</label>
+            <select id="topic" name="topic">
+              <option value="">Select an option</option>
+              <option>Business Development Support</option>
+              <option>Fractional BD Leadership</option>
+              <option>Client experience &amp; retention</option>
+              <option>Pricing &amp; value communication</option>
+              <option>Pipeline &amp; proposal support</option>
+              <option>Just exploring</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" required placeholder="A few sentences on where your firm is and what you're hoping to change."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send message <span class="btn-arrow">→</span></button>
+          <p class="form__notice form__status">Submissions are captured locally for now. Connect a form service (Formspree, Netlify Forms, or similar) when going live.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA ============== -->
+  <section class="section--dark cta-band">
+    <div class="container">
+      <h2>Prefer to read first?</h2>
+      <p>Have a look at the services or the field notes — and come back with sharper questions.</p>
+      <div class="btn-row">
+        <a href="services.html" class="btn btn--accent">Explore services</a>
+        <a href="insights.html" class="btn btn--ghost-light">Read insights</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav__brand" style="color: var(--color-text-on-dark);">Hadley<span style="color: var(--color-accent);">.</span> Advisors</div>
+          <p>Business development support and fractional BD leadership for accountancy firms — practical, human, and built around your values.</p>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="insights.html">Insights</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Engage</h5>
+          <ul>
+            <li><a href="contact.html">Start a conversation</a></li>
+            <li><a href="services.html#bd-support">BD support</a></li>
+            <li><a href="services.html#fractional">Fractional BD</a></li>
+            <li><a href="services.html#supporting">Supporting services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@hadleyadvisors.com">hello@hadleyadvisors.com</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Hadley Advisors. All rights reserved.</span>
+        <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

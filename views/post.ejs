@@ -1,0 +1,64 @@
+<% const metaTitle = post ? (post.title + ' — Hadley Advisors') : 'Article not found — Hadley Advisors'; %>
+<% const metaDescription = post ? post.body : 'The article you were looking for could not be found.'; %>
+<%- include('partials/head', { metaTitle, metaDescription }) %>
+
+<% if (!post) { %>
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header__inner">
+        <span class="eyebrow reveal">Insights</span>
+        <h1 class="reveal reveal--delay-1">Article not found.</h1>
+        <p class="lead reveal reveal--delay-2">We couldn't find an article at <code>/insights/<%= slug %></code>. It may have been renamed or removed.</p>
+        <p><a href="/insights" class="link-underline">← Back to all insights <span class="btn-arrow">→</span></a></p>
+      </div>
+    </div>
+  </section>
+<% } else { %>
+
+  <!-- ============== POST HEADER ============== -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header__inner post-header">
+        <p class="reveal"><a href="/insights" class="link-underline">← All insights</a></p>
+        <span class="eyebrow reveal"><%= post.category %> · <%= post.readTime %></span>
+        <h1 class="reveal reveal--delay-1"><%= post.title %></h1>
+        <p class="lead reveal reveal--delay-2"><%= post.body %></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== POST BODY ============== -->
+  <section class="section">
+    <div class="container">
+      <article class="post-body reveal">
+        <% if (post.image) { %>
+          <figure class="post-body__image">
+            <img src="<%= post.image %>" alt="<%= post.title %>">
+          </figure>
+        <% } %>
+        <% if (post.content && post.content.trim()) { %>
+          <div class="post-body__content"><%- markdown(post.content) %></div>
+        <% } else { %>
+          <div class="post-body__content post-body__content--empty">
+            <p><em>This article is in draft. Add the body in the admin under <strong>Insights → Articles → Article body</strong>, then save.</em></p>
+          </div>
+        <% } %>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============== CTA ============== -->
+  <section class="section--dark cta-band">
+    <div class="container">
+      <h2>Want more like this?</h2>
+      <p>Field notes from inside accountancy firms, delivered occasionally.</p>
+      <div class="btn-row">
+        <a href="mailto:<%= content.site.email %>?subject=Add%20me%20to%20Hadley%20Insights" class="btn btn--accent">Email to subscribe</a>
+        <a href="/contact" class="btn btn--ghost-light">Or start a conversation</a>
+      </div>
+    </div>
+  </section>
+
+<% } %>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,429 @@
+{
+  "site": {
+    "brandFirst": "Hadley",
+    "brandMark": ".",
+    "brandSecond": " Advisors",
+    "navCta": "Start a conversation",
+    "footerTagline": "Business development support and fractional BD leadership for accountancy firms — practical, human, and built around your values.",
+    "footerCopyright": "Hadley Advisors. All rights reserved.",
+    "email": "hello@hadleyadvisors.com",
+    "linkedinUrl": "#",
+    "linkedinLabel": "LinkedIn"
+  },
+  "home": {
+    "metaTitle": "Hadley Advisors — Helping accountancy firms grow with confidence",
+    "metaDescription": "Hadley Advisors helps accountancy firms build stronger pipelines, win better clients, and develop a business development culture that feels natural — not forced.",
+    "hero": {
+      "eyebrow": "Business development for accountancy firms",
+      "titleStart": "Helping accountancy firms grow with",
+      "titleEnd": ".",
+      "rotateWords": "confidence,clarity,intention,integrity",
+      "subtitle": "We help accountancy firms build stronger pipelines, win better clients, and develop a business development culture that feels natural — not forced. Growth doesn't come from scripts or pressure. It comes from clarity, confidence, and consistent action. That's where we come in.",
+      "ctaPrimary": "Start a conversation",
+      "ctaSecondary": "Explore our services",
+      "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2400&q=80",
+      "imageAlt": "Modern architectural office atrium with natural light"
+    },
+    "metaItems": [
+      {
+        "num": "100%",
+        "label": "Built for accountancy firms"
+      },
+      {
+        "num": "Senior-led",
+        "label": "No juniors, no scripts"
+      },
+      {
+        "num": "Human BD",
+        "label": "Practical, never pushy"
+      }
+    ],
+    "whatWeDo": {
+      "eyebrow": "What we do",
+      "title": "Four ways we help your firm grow.",
+      "lead": "Every engagement is shaped to your firm — but the work usually centres on these four areas.",
+      "cards": [
+        {
+          "num": "01",
+          "title": "Build BD capability across your firm",
+          "body": "Coaching and frameworks that help partners, managers, and teams have better commercial conversations — without ever feeling salesy."
+        },
+        {
+          "num": "02",
+          "title": "Strengthen client relationships and retention",
+          "body": "A more deliberate client experience — so the relationships you've already earned drive loyalty, referrals, and steady fee growth."
+        },
+        {
+          "num": "03",
+          "title": "Improve pricing confidence and value communication",
+          "body": "Help your team price with confidence and articulate value clearly — so you stop leaving fees on the table."
+        },
+        {
+          "num": "04",
+          "title": "Lead commercial initiatives through fractional BD support",
+          "body": "Senior commercial leadership — without the full-time hire. We step in as your BD lead and keep the engine running."
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Why accountancy firms choose us",
+      "title": "Because we understand your world.",
+      "lead": "We've worked inside accountancy firms — we know the pressures, the pace, and the realities of trying to grow while delivering exceptional client work.",
+      "items": [
+        {
+          "title": "Human, not transactional",
+          "body": "We make business development feel human, achievable, and aligned with your values."
+        },
+        {
+          "title": "Practical, not theoretical",
+          "body": "No jargon. No ego. Just practical support that moves your firm forward."
+        },
+        {
+          "title": "Specialist, not generalist",
+          "body": "Built for accountancy firms — we know your client conversations, your fee dynamics, your team realities."
+        },
+        {
+          "title": "Confidence-building, not pressure",
+          "body": "We help your team feel comfortable talking about value — and confident enough to keep doing it."
+        }
+      ]
+    },
+    "approach": {
+      "eyebrow": "Our approach",
+      "title": "Clarity, confidence, consistent action.",
+      "lead": "Growth that's sustainable usually follows the same rhythm: understand the firm, sharpen the focus, build the capability, then keep the momentum going.",
+      "steps": [
+        {
+          "title": "Listen and understand",
+          "body": "We start by understanding your firm, your clients, and what's quietly working — and what isn't."
+        },
+        {
+          "title": "Sharpen the focus",
+          "body": "Clarity on positioning, target clients, pricing, and the BD priorities that actually matter for your firm."
+        },
+        {
+          "title": "Build the capability",
+          "body": "Coaching, frameworks, and rituals that give partners and managers a way of working they'll actually keep up."
+        },
+        {
+          "title": "Keep the momentum",
+          "body": "Light-touch support so commercial priorities don't slip when client work gets busy — which it always does."
+        }
+      ]
+    },
+    "testimonialsHeader": {
+      "eyebrow": "In their words",
+      "title": "Quiet rigor. Real outcomes."
+    },
+    "testimonials": [
+      {
+        "quote": "Hadley brought structure to a conversation we'd been having for three years. Within a quarter we had a pipeline rhythm we could actually trust.",
+        "name": "[Client Name]",
+        "role": "Managing Partner, [Firm]"
+      },
+      {
+        "quote": "What I valued most was the honesty. We didn't get told what we wanted to hear — we got told what we needed to do, and how.",
+        "name": "[Client Name]",
+        "role": "Founder, [Firm]"
+      },
+      {
+        "quote": "The capability building piece is what set this apart. Six months on, the team is still running the rhythm we built together.",
+        "name": "[Client Name]",
+        "role": "Head of Growth, [Firm]"
+      }
+    ],
+    "ctaBand": {
+      "eyebrow": "Ready when you are",
+      "title": "Let's talk about what growth could look like for your firm.",
+      "body": "A 30-minute conversation. No pitch deck, no obligation — just a focused chat about where you are and where you're trying to get to.",
+      "ctaPrimary": "Start a conversation",
+      "ctaSecondary": "About Hadley"
+    }
+  },
+  "services": {
+    "metaTitle": "Services — Hadley Advisors",
+    "metaDescription": "Business development support and fractional BD leadership for accountancy firms — plus client experience, pricing, and pipeline support.",
+    "header": {
+      "eyebrow": "Services",
+      "title": "Our core services for accountancy firms.",
+      "lead": "Two core engagements — Business Development Support and Fractional BD Leadership — backed by three supporting services that strengthen specific parts of your commercial operation."
+    },
+    "bdSupport": {
+      "eyebrow": "01 — Business Development Support",
+      "title": "Practical, hands-on support to help your firm grow — without the awkwardness of traditional \"sales training\".",
+      "body": "We work with partners, managers, and teams to build confidence, improve conversations, and create a healthier, more predictable pipeline.",
+      "cta": "Discuss BD support",
+      "howWeHelp": [
+        {
+          "title": "BD coaching",
+          "body": "For partners and managers, building confidence in commercial conversations."
+        },
+        {
+          "title": "Pipeline and opportunity development",
+          "body": "Healthier pipelines, with the right opportunities at the right stage."
+        },
+        {
+          "title": "Proposal and pitch support",
+          "body": "Sharper messaging and stronger positioning where it counts."
+        },
+        {
+          "title": "Pricing and value communication",
+          "body": "Articulate value clearly and price with confidence."
+        },
+        {
+          "title": "Relationship-building strategies",
+          "body": "Practical ways to deepen the relationships you already have."
+        },
+        {
+          "title": "Client experience improvements",
+          "body": "The small shifts that turn good clients into loyal advocates."
+        }
+      ],
+      "outcomes": [
+        "A stronger, more consistent pipeline.",
+        "Better client conversations.",
+        "Higher win rates.",
+        "Improved margins.",
+        "A team that understands how to grow the firm."
+      ]
+    },
+    "fractional": {
+      "eyebrow": "02 — Fractional BD Leadership",
+      "title": "Senior-level commercial leadership — without the full-time hire.",
+      "body": "We step in as your BD lead, driving growth initiatives, coaching your team, and ensuring commercial priorities stay on track.",
+      "bodyMuted": "Perfect for firms that want to grow but don't have the internal capacity, capability, or clarity to drive BD consistently.",
+      "cta": "Discuss fractional BD",
+      "howWeHelp": [
+        {
+          "title": "Leading BD initiatives and campaigns",
+          "body": "Owning the strategy and execution, not just the slides."
+        },
+        {
+          "title": "Setting commercial priorities and targets",
+          "body": "Clear focus, agreed across the partner group."
+        },
+        {
+          "title": "Coaching partners and managers",
+          "body": "Building the people who will keep the engine running after we leave."
+        },
+        {
+          "title": "Improving client experience and retention",
+          "body": "So the foundation under your growth keeps getting stronger."
+        },
+        {
+          "title": "Supporting pricing, proposals, and key pursuits",
+          "body": "Hands-on involvement in the deals that matter most."
+        },
+        {
+          "title": "Creating accountability and momentum",
+          "body": "The rhythm and reviews that make commercial progress visible."
+        }
+      ],
+      "outcomes": [
+        "Consistent progress.",
+        "Clear commercial focus.",
+        "Better decision-making.",
+        "A BD engine that keeps running."
+      ]
+    },
+    "supporting": {
+      "eyebrow": "Supporting services",
+      "title": "Targeted support where it matters most.",
+      "lead": "Three focused services we deliver alongside — or independently of — our two core engagements.",
+      "cards": [
+        {
+          "title": "Client experience & retention",
+          "body": "Strengthen relationships, improve communication, and create a client journey that drives loyalty and referrals."
+        },
+        {
+          "title": "Pricing & value communication",
+          "body": "Help your team price confidently and communicate value without discomfort."
+        },
+        {
+          "title": "Pipeline & proposal support",
+          "body": "Improve pipeline quality and increase your win rate with clearer messaging and stronger positioning."
+        }
+      ]
+    },
+    "approach": {
+      "eyebrow": "Our approach",
+      "title": "How an engagement actually unfolds.",
+      "lead": "Each engagement is shaped to your firm — but the underlying rhythm is consistent. Listening first. Clarity that holds up. Capability that lasts.",
+      "steps": [
+        {
+          "title": "Listen and understand",
+          "body": "Conversations with partners, managers, and (where helpful) clients. An honest read of where the firm actually stands."
+        },
+        {
+          "title": "Sharpen the focus",
+          "body": "Clarity on positioning, target clients, pricing, and commercial priorities — agreed by the people who will execute it."
+        },
+        {
+          "title": "Build the capability",
+          "body": "Coaching, frameworks, and the rituals that make growth feel doable inside busy client-service teams."
+        },
+        {
+          "title": "Run with you",
+          "body": "We sit alongside your team while the rhythm bedds in — real conversations, real reviews, quick course corrections."
+        },
+        {
+          "title": "Embed and hand over",
+          "body": "The work belongs to your firm. We're easy to remove when the rhythm is running without us."
+        },
+        {
+          "title": "Stay close",
+          "body": "Most firms keep us on a light advisory retainer afterwards — useful for tricky pursuits, partner reviews, and quiet counsel."
+        }
+      ]
+    },
+    "ctaBand": {
+      "title": "Not sure which fits? That's the conversation.",
+      "body": "A 30-minute call is the easiest place to start. We'll listen, ask the questions that matter, and tell you straight whether we think we're the right partner.",
+      "cta": "Start a conversation"
+    }
+  },
+  "about": {
+    "metaTitle": "About — Hadley Advisors",
+    "metaDescription": "Hadley Advisors was created to help accountancy firms grow in a way that feels authentic — rooted in relationships, clarity, and confidence.",
+    "header": {
+      "eyebrow": "About",
+      "title": "A specialist approach to business development for accountancy firms.",
+      "lead": "Hadley Advisors was created to help accountancy firms grow in a way that feels authentic. We believe business development should feel natural — rooted in relationships, clarity, and confidence — not scripts or pressure."
+    },
+    "founder": {
+      "eyebrow": "Founder",
+      "name": "[Founder Name]",
+      "paragraph1": "Our background is in accountancy. We've led teams, shaped client experience, and helped firms turn relationships into revenue. We understand the realities: the time pressure, the confidence gaps, the fee pressure, and the desire to grow without compromising your values.",
+      "paragraph2": "[Optional founder paragraph — a sentence or two on the through-line of your career, the kinds of firms you've worked with, and the conviction that started Hadley Advisors. Keep it human; avoid CV-speak.]",
+      "paragraph3": "[Optional personal sentence — where you're based, what you care about outside work, what clients tend to say about working with you.]",
+      "ctaLabel": "Get in touch",
+      "photo": ""
+    },
+    "philosophy": {
+      "eyebrow": "Our philosophy",
+      "title": "Five principles that shape every engagement.",
+      "lead": "Every engagement is shaped to the firm. These are the things that don't change.",
+      "values": [
+        {
+          "title": "Human.",
+          "body": "BD is about people, not selling. We work with how your team naturally operates."
+        },
+        {
+          "title": "Practical.",
+          "body": "Clear steps, real conversations, measurable progress. No theory for theory's sake."
+        },
+        {
+          "title": "Commercial.",
+          "body": "Growth that's sustainable and profitable — not vanity activity that doesn't move fees."
+        },
+        {
+          "title": "Collaborative.",
+          "body": "We work with you, not over you. Your judgment, your firm, our experience."
+        },
+        {
+          "title": "Confidence-building.",
+          "body": "Helping teams feel comfortable talking about value — and confident enough to keep doing it."
+        }
+      ]
+    },
+    "belief": {
+      "eyebrow": "What we believe",
+      "title": "Accountancy firms don't need to become \"salesy\" to grow.",
+      "lead": "They need clarity, confidence, and a consistent approach to business development. We help firms build the capability and momentum they need to grow with intention."
+    },
+    "ctaBand": {
+      "title": "Let's talk about your goals.",
+      "body": "A 30-minute conversation is the easiest way to find out if we're the right partner — for both of us.",
+      "ctaPrimary": "Start a conversation",
+      "ctaSecondary": "Explore the services"
+    }
+  },
+  "insights": {
+    "metaTitle": "Insights — Hadley Advisors",
+    "metaDescription": "Notes, frameworks, and short essays from Hadley Advisors on growth, BD, and client experience for accountancy firms.",
+    "header": {
+      "eyebrow": "Insights",
+      "title": "Field notes from inside accountancy firms.",
+      "lead": "Short essays, frameworks, and observations on what actually moves the needle for accountancy firms — BD, client experience, pricing, and the realities of growing without becoming \"salesy\"."
+    },
+    "posts": [
+      {
+        "category": "BD culture",
+        "readTime": "6 min read",
+        "title": "Why \"salesy\" is the wrong fear for accountants.",
+        "body": "Most partners worry they'll come across as pushy. The real risk is the opposite — being so quiet your clients don't realise what else you could do for them.",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80"
+      },
+      {
+        "category": "Pricing",
+        "readTime": "5 min read",
+        "title": "The conversation that quietly costs accountancy firms thousands.",
+        "body": "It's the fee discussion you avoid having upfront. Here's a small reframe that makes it dramatically easier — for you and for the client.",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=80"
+      },
+      {
+        "category": "Partner BD",
+        "readTime": "8 min read",
+        "title": "Building a BD rhythm partners will actually keep.",
+        "body": "The secret isn't a CRM. It's a 45-minute weekly ritual designed for people who'd rather be doing client work.",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1400&q=80",
+        "content": "test test test"
+      },
+      {
+        "category": "Client experience",
+        "readTime": "7 min read",
+        "title": "The client experience signals partners almost always miss.",
+        "body": "The small moments that quietly decide whether a client refers you, expands the relationship — or starts looking elsewhere.",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1573164713619-24c711fe7878?auto=format&fit=crop&w=1400&q=80"
+      },
+      {
+        "category": "Pursuit craft",
+        "readTime": "5 min read",
+        "title": "What separates a strong proposal from a forgettable one.",
+        "body": "It isn't the design. A practical look at the framing decisions that change how clients value your work — and your fees.",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1400&q=80"
+      },
+      {
+        "category": "Operating model",
+        "readTime": "6 min read",
+        "title": "The four numbers every accountancy firm should track weekly.",
+        "body": "Forget vanity metrics. These four numbers tell you the truth about whether your growth engine is actually running.",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80"
+      }
+    ],
+    "ctaBand": {
+      "title": "Want these notes when they land?",
+      "body": "The simplest way is a short email. We'll set up a proper subscription form when you've chosen a provider.",
+      "ctaPrimary": "Email to subscribe",
+      "ctaSecondary": "Or start a conversation"
+    }
+  },
+  "contact": {
+    "metaTitle": "Contact — Hadley Advisors",
+    "metaDescription": "Get in touch with Hadley Advisors. Start a conversation about how business development could feel different for your accountancy firm.",
+    "header": {
+      "eyebrow": "Contact",
+      "title": "Let's start a conversation.",
+      "lead": "A 30-minute conversation is the easiest way to understand whether we're the right partner. No pitch deck, no obligation — just a focused chat about where your firm is and where you're trying to get to."
+    },
+    "info": {
+      "title": "Get in touch.",
+      "body": "Tell us a little about your firm and what's prompting the conversation. We aim to reply within one business day.",
+      "linkedinHandle": "linkedin.com/in/[founder-handle]",
+      "basedIn": "[City, Country]",
+      "workingWith": "UK, Europe, and remote engagements"
+    },
+    "ctaBand": {
+      "title": "Prefer to read first?",
+      "body": "Have a look at the services or the field notes — and come back with sharper questions.",
+      "ctaPrimary": "Explore services",
+      "ctaSecondary": "Read insights"
+    }
+  }
+}

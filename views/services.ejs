@@ -1,0 +1,123 @@
+<% const c = content.services; %>
+<%- include('partials/head', { metaTitle: c.metaTitle, metaDescription: c.metaDescription }) %>
+
+  <!-- ============== PAGE HEADER ============== -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header__inner">
+        <span class="eyebrow reveal"><%= c.header.eyebrow %></span>
+        <h1 class="reveal reveal--delay-1"><%= c.header.title %></h1>
+        <p class="lead reveal reveal--delay-2"><%= c.header.lead %></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SERVICE 01 — BD SUPPORT ============== -->
+  <section class="section" id="bd-support">
+    <div class="container">
+      <div class="grid grid--2" style="align-items: center;">
+        <div class="reveal">
+          <span class="eyebrow"><%= c.bdSupport.eyebrow %></span>
+          <h2><%= c.bdSupport.title %></h2>
+          <p><%= c.bdSupport.body %></p>
+          <a href="/contact" class="btn btn--primary"><%= c.bdSupport.cta %> <span class="btn-arrow">→</span></a>
+        </div>
+        <div class="card reveal reveal--delay-1" style="background: var(--color-surface-alt);">
+          <h3>How we help</h3>
+          <ul class="values">
+            <% c.bdSupport.howWeHelp.forEach(item => { %>
+              <li><strong><%= item.title %></strong><%= item.body %></li>
+            <% }) %>
+          </ul>
+          <h3 style="margin-top: 2rem;">Outcomes</h3>
+          <ul class="values">
+            <% c.bdSupport.outcomes.forEach(o => { %>
+              <li><strong><%= o %></strong></li>
+            <% }) %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SERVICE 02 — FRACTIONAL BD ============== -->
+  <section class="section section--alt" id="fractional">
+    <div class="container">
+      <div class="grid grid--2" style="align-items: center;">
+        <div class="card reveal" style="order: 2;">
+          <h3>How we help</h3>
+          <ul class="values">
+            <% c.fractional.howWeHelp.forEach(item => { %>
+              <li><strong><%= item.title %></strong><%= item.body %></li>
+            <% }) %>
+          </ul>
+          <h3 style="margin-top: 2rem;">Outcomes</h3>
+          <ul class="values">
+            <% c.fractional.outcomes.forEach(o => { %>
+              <li><strong><%= o %></strong></li>
+            <% }) %>
+          </ul>
+        </div>
+        <div class="reveal reveal--delay-1" style="order: 1;">
+          <span class="eyebrow"><%= c.fractional.eyebrow %></span>
+          <h2><%= c.fractional.title %></h2>
+          <p><%= c.fractional.body %></p>
+          <p style="color: var(--color-text-muted);"><%= c.fractional.bodyMuted %></p>
+          <a href="/contact" class="btn btn--primary"><%= c.fractional.cta %> <span class="btn-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SUPPORTING SERVICES ============== -->
+  <section class="section" id="supporting">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow"><%= c.supporting.eyebrow %></span>
+        <span class="section-rule"></span>
+        <h2><%= c.supporting.title %></h2>
+        <p class="lead"><%= c.supporting.lead %></p>
+      </div>
+      <div class="grid grid--3">
+        <% c.supporting.cards.forEach((card, i) => { %>
+          <div class="card reveal reveal--delay-<%= (i % 4) + 1 %>">
+            <h3><%= card.title %></h3>
+            <p><%= card.body %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== APPROACH ============== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow"><%= c.approach.eyebrow %></span>
+        <span class="section-rule"></span>
+        <h2><%= c.approach.title %></h2>
+        <p class="lead"><%= c.approach.lead %></p>
+      </div>
+      <div class="steps">
+        <% c.approach.steps.forEach((step, i) => { %>
+          <div class="step reveal reveal--delay-<%= (i % 4) + 1 %>">
+            <h3><%= step.title %></h3>
+            <p><%= step.body %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA ============== -->
+  <section class="section--dark cta-band">
+    <div class="container">
+      <h2><%= c.ctaBand.title %></h2>
+      <p><%= c.ctaBand.body %></p>
+      <div class="btn-row">
+        <a href="/contact" class="btn btn--accent"><%= c.ctaBand.cta %> <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+<%- include('partials/footer') %>

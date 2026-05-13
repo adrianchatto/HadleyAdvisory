@@ -1,0 +1,126 @@
+<% const c = content.home; %>
+<%- include('partials/head', { metaTitle: c.metaTitle, metaDescription: c.metaDescription, bodyClass: 'has-hero' }) %>
+
+  <!-- ============== HERO (full-bleed photographic background) ============== -->
+  <section class="hero" style="background-image: url('<%= c.hero.image %>');" aria-label="<%= c.hero.imageAlt %>">
+    <div class="container">
+      <div class="hero__layout">
+        <div class="hero__inner">
+          <span class="eyebrow reveal"><%= c.hero.eyebrow %></span>
+          <h1 class="hero__title reveal reveal--delay-1">
+            <%= c.hero.titleStart %> <%= (c.hero.rotateWords || '').split(',')[0].trim() %><%= c.hero.titleEnd %>
+          </h1>
+          <p class="hero__subtitle reveal reveal--delay-2"><%= c.hero.subtitle %></p>
+          <div class="hero__actions reveal reveal--delay-3">
+            <a href="/contact" class="btn btn--primary"><%= c.hero.ctaPrimary %> <span class="btn-arrow">→</span></a>
+            <a href="/services" class="btn btn--outline"><%= c.hero.ctaSecondary %></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__meta reveal reveal--delay-4">
+        <% c.metaItems.forEach(item => { %>
+          <div class="hero__meta-item">
+            <span class="num"><%= item.num %></span>
+            <span class="label"><%= item.label %></span>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== WHAT WE DO ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow"><%= c.whatWeDo.eyebrow %></span>
+        <span class="section-rule"></span>
+        <h2><%= c.whatWeDo.title %></h2>
+        <p class="lead"><%= c.whatWeDo.lead %></p>
+      </div>
+      <div class="grid grid--2">
+        <% c.whatWeDo.cards.forEach((card, i) => { %>
+          <div class="service-card reveal reveal--delay-<%= (i % 4) + 1 %>">
+            <span class="service-card__num"><%= card.num %></span>
+            <h3><%= card.title %></h3>
+            <p><%= card.body %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== WHY ACCOUNTANCY FIRMS CHOOSE US ============== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow"><%= c.whyUs.eyebrow %></span>
+        <span class="section-rule"></span>
+        <h2><%= c.whyUs.title %></h2>
+        <p class="lead"><%= c.whyUs.lead %></p>
+      </div>
+      <div class="audience">
+        <% c.whyUs.items.forEach((item, i) => { %>
+          <div class="audience__item reveal reveal--delay-<%= (i % 4) + 1 %>">
+            <h4><%= item.title %></h4>
+            <p><%= item.body %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== APPROACH ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow"><%= c.approach.eyebrow %></span>
+        <span class="section-rule"></span>
+        <h2><%= c.approach.title %></h2>
+        <p class="lead"><%= c.approach.lead %></p>
+      </div>
+      <div class="steps">
+        <% c.approach.steps.forEach((step, i) => { %>
+          <div class="step reveal reveal--delay-<%= (i % 4) + 1 %>">
+            <h3><%= step.title %></h3>
+            <p><%= step.body %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TESTIMONIALS ============== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header section-header--center reveal">
+        <span class="eyebrow"><%= c.testimonialsHeader.eyebrow %></span>
+        <h2><%= c.testimonialsHeader.title %></h2>
+      </div>
+      <div class="testimonials">
+        <% c.testimonials.forEach((t, i) => { %>
+          <figure class="testimonial reveal reveal--delay-<%= (i % 4) + 1 %>">
+            <blockquote class="testimonial__quote"><%= t.quote %></blockquote>
+            <figcaption class="testimonial__author">
+              <span class="testimonial__name"><%= t.name %></span>
+              <span class="testimonial__role"><%= t.role %></span>
+            </figcaption>
+          </figure>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA BAND ============== -->
+  <section class="section--dark cta-band">
+    <div class="container">
+      <span class="eyebrow"><%= c.ctaBand.eyebrow %></span>
+      <h2><%= c.ctaBand.title %></h2>
+      <p><%= c.ctaBand.body %></p>
+      <div class="btn-row">
+        <a href="/contact" class="btn btn--accent"><%= c.ctaBand.ctaPrimary %> <span class="btn-arrow">→</span></a>
+        <a href="/about" class="btn btn--ghost-light"><%= c.ctaBand.ctaSecondary %></a>
+      </div>
+    </div>
+  </section>
+
+<%- include('partials/footer') %>

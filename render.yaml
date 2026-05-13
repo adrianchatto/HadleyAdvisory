@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: hadley-advisors
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_USER
+        sync: false
+      - key: ADMIN_PASS
+        sync: false

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin — Hadley Advisors CMS</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/admin-assets/css/admin.css">
+</head>
+<body class="admin">
+  <header class="admin-header">
+    <div class="admin-header__inner">
+      <a class="admin-header__brand" href="/"><%= content.site.brandFirst %><span style="color: var(--color-accent);"><%= content.site.brandMark %></span><%= content.site.brandSecond %> <small>CMS</small></a>
+      <nav class="admin-header__nav">
+        <a href="/" target="_blank" rel="noopener">View site ↗</a>
+        <form method="post" action="/admin/logout" style="display:inline">
+          <button type="submit" class="link-btn">Sign out</button>
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <div class="admin-toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="admin-shell">
+    <aside class="admin-tabs" id="tabs"></aside>
+    <main class="admin-main" id="main">
+      <p class="admin-loading">Loading content…</p>
+    </main>
+  </div>
+
+  <script src="/admin-assets/js/admin.js" defer></script>
+</body>
+</html>

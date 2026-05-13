@@ -1,0 +1,13 @@
+{
+  "colorPrimary": "#1C2420",
+  "colorPrimaryDark": "#0F1411",
+  "colorAccent": "#D6A85A",
+  "colorAccentDark": "#B88A3F",
+  "colorBg": "#F5F2E8",
+  "colorSurface": "#ffffff",
+  "colorSurfaceAlt": "#EFEAD9",
+  "colorText": "#1A2128",
+  "colorTextMuted": "#6B7280",
+  "colorTextOnDark": "#FBF6EC",
+  "colorBorder": "#E3DECF"
+}

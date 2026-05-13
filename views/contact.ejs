@@ -1,0 +1,91 @@
+<% const c = content.contact; %>
+<%- include('partials/head', { metaTitle: c.metaTitle, metaDescription: c.metaDescription }) %>
+
+  <!-- ============== PAGE HEADER ============== -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header__inner">
+        <span class="eyebrow reveal"><%= c.header.eyebrow %></span>
+        <h1 class="reveal reveal--delay-1"><%= c.header.title %></h1>
+        <p class="lead reveal reveal--delay-2"><%= c.header.lead %></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT GRID ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h2><%= c.info.title %></h2>
+          <p><%= c.info.body %></p>
+          <dl>
+            <dt>Email</dt>
+            <dd><a href="mailto:<%= content.site.email %>"><%= content.site.email %></a></dd>
+            <dt>LinkedIn</dt>
+            <dd><a href="<%= content.site.linkedinUrl %>"><%= c.info.linkedinHandle %></a></dd>
+            <dt>Based in</dt>
+            <dd><%= c.info.basedIn %></dd>
+            <dt>Working with firms across</dt>
+            <dd><%= c.info.workingWith %></dd>
+          </dl>
+        </div>
+
+        <form class="form reveal reveal--delay-1" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="firm">Firm name</label>
+              <input id="firm" name="firm" type="text" autocomplete="organization">
+            </div>
+            <div class="form__group">
+              <label for="role">Your role</label>
+              <input id="role" name="role" type="text" autocomplete="organization-title">
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="topic">What's on your mind?</label>
+            <select id="topic" name="topic">
+              <option value="">Select an option</option>
+              <option>Business Development Support</option>
+              <option>Fractional BD Leadership</option>
+              <option>Client experience &amp; retention</option>
+              <option>Pricing &amp; value communication</option>
+              <option>Pipeline &amp; proposal support</option>
+              <option>Just exploring</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" required placeholder="A few sentences on where your firm is and what you're hoping to change."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send message <span class="btn-arrow">→</span></button>
+          <p class="form__notice form__status">Submissions are captured locally for now. Connect a form service (Formspree, Netlify Forms, or similar) when going live.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA ============== -->
+  <section class="section--dark cta-band">
+    <div class="container">
+      <h2><%= c.ctaBand.title %></h2>
+      <p><%= c.ctaBand.body %></p>
+      <div class="btn-row">
+        <a href="/services" class="btn btn--accent"><%= c.ctaBand.ctaPrimary %></a>
+        <a href="/insights" class="btn btn--ghost-light"><%= c.ctaBand.ctaSecondary %></a>
+      </div>
+    </div>
+  </section>
+
+<%- include('partials/footer') %>

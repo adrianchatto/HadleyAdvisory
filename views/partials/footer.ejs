@@ -1,0 +1,43 @@
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav__brand" style="color: var(--color-text-on-dark);"><%= content.site.brandFirst %><span style="color: var(--color-accent);"><%= content.site.brandMark %></span><%= content.site.brandSecond %></div>
+          <p><%= content.site.footerTagline %></p>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/insights">Insights</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Engage</h5>
+          <ul>
+            <li><a href="/contact"><%= content.site.navCta %></a></li>
+            <li><a href="/services#bd-support">BD support</a></li>
+            <li><a href="/services#fractional">Fractional BD</a></li>
+            <li><a href="/services#supporting">Supporting services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:<%= content.site.email %>"><%= content.site.email %></a></li>
+            <li><a href="<%= content.site.linkedinUrl %>"><%= content.site.linkedinLabel %></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> <%= content.site.footerCopyright %></span>
+        <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

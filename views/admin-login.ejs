@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin login — Hadley Advisors</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/admin-assets/css/admin.css">
+</head>
+<body class="admin admin--centered">
+  <main class="login-card">
+    <a class="login-card__brand" href="/"><%= content.site.brandFirst %><span style="color: var(--color-accent);"><%= content.site.brandMark %></span><%= content.site.brandSecond %></a>
+    <h1>Sign in to the CMS</h1>
+    <p class="login-card__hint">Use the dev credentials: <code>admin</code> / <code>admin</code>. We'll harden this before going live.</p>
+    <% if (error) { %>
+      <div class="alert alert--error"><%= error %></div>
+    <% } %>
+    <form method="post" action="/admin/login" class="login-form">
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" autocomplete="username" required autofocus>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required>
+      <button type="submit" class="btn btn--primary">Sign in</button>
+    </form>
+    <p class="login-card__back"><a href="/">← Back to site</a></p>
+  </main>
+</body>
+</html>

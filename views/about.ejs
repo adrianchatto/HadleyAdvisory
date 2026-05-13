@@ -1,0 +1,78 @@
+<% const c = content.about; %>
+<%- include('partials/head', { metaTitle: c.metaTitle, metaDescription: c.metaDescription }) %>
+
+  <!-- ============== PAGE HEADER ============== -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header__inner">
+        <span class="eyebrow reveal"><%= c.header.eyebrow %></span>
+        <h1 class="reveal reveal--delay-1"><%= c.header.title %></h1>
+        <p class="lead reveal reveal--delay-2"><%= c.header.lead %></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOUNDER ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="reveal">
+          <span class="eyebrow"><%= c.founder.eyebrow %></span>
+          <h2><%= c.founder.name %></h2>
+          <p><%= c.founder.paragraph1 %></p>
+          <% if (c.founder.paragraph2) { %><p><%= c.founder.paragraph2 %></p><% } %>
+          <% if (c.founder.paragraph3) { %><p><%= c.founder.paragraph3 %></p><% } %>
+          <a href="/contact" class="link-underline"><%= c.founder.ctaLabel %> <span class="btn-arrow">→</span></a>
+        </div>
+        <div class="about-grid__photo reveal reveal--delay-1">
+          <% if (c.founder.photo) { %>
+            <img src="<%= c.founder.photo %>" alt="<%= c.founder.name %>">
+          <% } else { %>
+            [ Founder photo will go here. <br>Upload one in the admin to replace this placeholder. ]
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== OUR PHILOSOPHY ============== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow"><%= c.philosophy.eyebrow %></span>
+        <span class="section-rule"></span>
+        <h2><%= c.philosophy.title %></h2>
+        <p class="lead"><%= c.philosophy.lead %></p>
+      </div>
+      <ul class="values">
+        <% c.philosophy.values.forEach((v, i) => { %>
+          <li class="reveal reveal--delay-<%= (i % 4) + 1 %>"><strong><%= v.title %></strong><%= v.body %></li>
+        <% }) %>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============== WHAT WE BELIEVE ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header section-header--center reveal">
+        <span class="eyebrow"><%= c.belief.eyebrow %></span>
+        <h2><%= c.belief.title %></h2>
+        <p class="lead"><%= c.belief.lead %></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA ============== -->
+  <section class="section--dark cta-band">
+    <div class="container">
+      <h2><%= c.ctaBand.title %></h2>
+      <p><%= c.ctaBand.body %></p>
+      <div class="btn-row">
+        <a href="/contact" class="btn btn--accent"><%= c.ctaBand.ctaPrimary %> <span class="btn-arrow">→</span></a>
+        <a href="/services" class="btn btn--ghost-light"><%= c.ctaBand.ctaSecondary %></a>
+      </div>
+    </div>
+  </section>
+
+<%- include('partials/footer') %>

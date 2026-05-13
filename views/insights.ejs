@@ -1,0 +1,65 @@
+<% const c = content.insights; %>
+<%- include('partials/head', { metaTitle: c.metaTitle, metaDescription: c.metaDescription }) %>
+
+  <!-- ============== PAGE HEADER ============== -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header__inner">
+        <span class="eyebrow reveal"><%= c.header.eyebrow %></span>
+        <h1 class="reveal reveal--delay-1"><%= c.header.title %></h1>
+        <p class="lead reveal reveal--delay-2"><%= c.header.lead %></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== POSTS GRID ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="posts">
+        <% c.posts.forEach((post, i) => { %>
+          <article class="post reveal">
+            <div class="post__image">
+              <% if (post.image) { %>
+                <img src="<%= post.image %>" alt="<%= post.title %>" style="width:100%;height:100%;object-fit:cover;">
+              <% } else { %>
+                [ Article image ]
+              <% } %>
+            </div>
+            <div class="post__body">
+              <div class="post__meta"><%= post.category %> · <%= post.readTime %></div>
+              <h3><%= post.title %></h3>
+              <p><%= post.body %></p>
+              <%
+                // Decide where "Read the post" links to:
+                //   1. External URL field set → link out
+                //   2. Otherwise → internal /insights/<slug> page
+                const externalUrl = post.url && post.url.trim() !== '' && post.url.trim() !== '#' ? post.url.trim() : null;
+                const internalSlug = post.slug ? slugify(post.slug) : slugify(post.title);
+              %>
+              <% if (externalUrl) { %>
+                <a href="<%= externalUrl %>" class="post__link" target="_blank" rel="noopener">Read the post <span class="btn-arrow">→</span></a>
+              <% } else if (internalSlug) { %>
+                <a href="/insights/<%= internalSlug %>" class="post__link">Read the post <span class="btn-arrow">→</span></a>
+              <% } else { %>
+                <span class="post__link post__link--muted">Coming soon</span>
+              <% } %>
+            </div>
+          </article>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA ============== -->
+  <section class="section--dark cta-band">
+    <div class="container">
+      <h2><%= c.ctaBand.title %></h2>
+      <p><%= c.ctaBand.body %></p>
+      <div class="btn-row">
+        <a href="mailto:<%= content.site.email %>?subject=Add%20me%20to%20Hadley%20Insights" class="btn btn--accent"><%= c.ctaBand.ctaPrimary %></a>
+        <a href="/contact" class="btn btn--ghost-light"><%= c.ctaBand.ctaSecondary %></a>
+      </div>
+    </div>
+  </section>
+
+<%- include('partials/footer') %>
